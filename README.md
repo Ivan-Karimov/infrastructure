@@ -11,6 +11,7 @@ This project contains Terraform infrastructure for Azure Static Web App for simp
 - Terraform
 - Azure CLI
 - Azure subscription
+- PowerShell
 
 ## Quick start
 
