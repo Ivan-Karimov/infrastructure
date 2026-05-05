@@ -14,8 +14,32 @@ This project contains Terraform infrastructure for Azure Static Web App for simp
 
 ## Quick start
 
-TODO: Add quick start guide
+1. Sign in to Azure:
 
-## Plan
+   ```powershell
+   az login
+   ```
 
-- Add instructions how to provision and destroy Azure resources for web store with Terraform.
+2. Select Azure subscription:
+
+   ```powershell
+   az account set --subscription "<subscription-id-or-name>"
+   ```
+
+3. Provision infrastructure:
+
+   ```powershell
+   .\scripts\terraform-apply.ps1
+   ```
+
+4. Review Terraform outputs: resource group name, ID and URL.
+5. To destroy Azure resources when they are no longer needed:
+
+   ```powershell
+   .\scripts\terraform-destroy.ps1
+   ```
+
+## Roadmap
+
+- Add provision and destroy scripts for Linux.
+- Add Azure static web app to Terraform.
