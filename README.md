@@ -17,10 +17,10 @@ This project contains Terraform infrastructure for Azure Static Web App for simp
 1. Sign in to Azure:
 
    ```powershell
-   az login
+   az login --tenant <tenant-id>
    ```
 
-2. Select Azure subscription:
+2. If needed, select Azure subscription:
 
    ```powershell
    az account set --subscription "<subscription-id-or-name>"
@@ -32,7 +32,7 @@ This project contains Terraform infrastructure for Azure Static Web App for simp
    .\scripts\terraform-apply.ps1
    ```
 
-4. Review Terraform outputs: resource group name, ID and URL.
+4. Review Terraform outputs: resource group name, ID, and URL.
 5. To destroy Azure resources when they are no longer needed:
 
    ```powershell
