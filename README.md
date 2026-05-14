@@ -9,7 +9,7 @@ This project contains Terraform infrastructure for a simple Azure Static Web App
 ## Requirements
 
 - Terraform
-- Azure CLI
+- Azure CLI >= 2.86.0
 - Azure subscription
 
 For Windows:
@@ -73,4 +73,5 @@ chmod +x scripts/terraform-apply.sh scripts/terraform-destroy.sh
 
 ## Roadmap
 
+- Merge deploy and az parts to the deploy and destroy scripts bash scripts.
 - Add Azure static web app to Terraform.
