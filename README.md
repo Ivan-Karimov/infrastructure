@@ -30,45 +30,38 @@ chmod +x scripts/terraform-apply.sh scripts/terraform-destroy.sh
 
 ## Quick start
 
-1. Sign in to Azure:
-
-   ```shell
-   az login --tenant <tenant-id>
-   ```
-
-2. If needed, select Azure subscription:
-
-   ```shell
-   az account set --subscription "<subscription-id-or-name>"
-   ```
-
-3. Provision infrastructure.
+1. Run script. If necessary, provide Azure tenant and subscription arguments.
 
    PowerShell:
 
    ```powershell
    .\scripts\terraform-apply.ps1
+   .\scripts\terraform-apply.ps1 -TenantId <tenant-id> -SubscriptionIdOrName "<subscription-id-or-name>"
    ```
 
    Bash:
 
    ```bash
    ./scripts/terraform-apply.sh
+   ./scripts/terraform-apply.sh --tenant <tenant-id> --subscription "<subscription-id-or-name>"
    ```
 
-4. Review Terraform outputs: resource group name, ID, and URL.
-5. Destroy Azure resources when they are no longer needed.
+2. Review Terraform outputs: resource group name, ID, and URL.
+
+3. Destroy Azure resources when they are no longer needed. You can also use tenant id and/or subscription id or name.
 
    PowerShell:
 
    ```powershell
    .\scripts\terraform-destroy.ps1
+   .\scripts\terraform-destroy.ps1 -TenantId <tenant-id> -SubscriptionIdOrName "<subscription-id-or-name>"
    ```
 
    Bash:
 
    ```bash
    ./scripts/terraform-destroy.sh
+   ./scripts/terraform-destroy.sh --tenant <tenant-id> --subscription "<subscription-id-or-name>"
    ```
 
 ## Roadmap
