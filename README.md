@@ -73,5 +73,4 @@ chmod +x scripts/terraform-apply.sh scripts/terraform-destroy.sh
 
 ## Roadmap
 
-- Merge deploy and az parts to the deploy and destroy scripts bash scripts.
 - Add Azure static web app to Terraform.
